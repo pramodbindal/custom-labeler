@@ -1,0 +1,11 @@
+apiVersion: pramodbindal.dev/v1alpha1
+kind: Labeler
+metadata:
+  name: example-labeler
+  labels:
+    pramodbindal.dev/release: v0.0.0
+spec:
+  customLabels:
+    environment: "local"
+    label-manager: example-labeler
+    team: "devops"

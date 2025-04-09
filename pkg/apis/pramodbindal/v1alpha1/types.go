@@ -13,11 +13,11 @@ type Labeler struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 
-	spec LabelerSpec `json:"spec"`
+	Spec LabelerSpec `json:"spec"`
 }
 
 type LabelerSpec struct {
-	customLabels map[string]string
+	CustomLabels map[string]string `json:"customLabels"`
 }
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
